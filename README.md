@@ -34,3 +34,10 @@ smtp.connect('smtp.qq.com',25)
 smtp.login(username, password)  # 登陆邮箱
 smtp.sendmail(msg['From'], msg['To'], msg.as_string())  # 发送邮件！
 print("邮件发送成功!")
+
+smtp = smtplib.SMTP()
+smtp.connect('smtp.qq.com',25)
+smtp.login(username, password)  # 登陆邮箱
+smtp.sendmail(msg['From'], msg['To'], msg.as_string())  # 发送邮件！
+print("邮件发送成功!")
+
